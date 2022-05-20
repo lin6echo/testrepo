@@ -1,0 +1,13 @@
+#colorDiv {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: darkblue;
+}
+
+html {
+    background-color: #c0c0c0;
+    background-image: url("../img/dog.jpg");
+    background-position: left center;
+    background-repeat: repeat-x; /*-y függőlegesen ismétli/*
+}

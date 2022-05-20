@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "enigmatic";
+    src: url(/testrepo/html-basic-2/css/Fonts/Enigmatic.TTF);
+    font-weight: 400;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&family=Titillium+Web:wght@200&display=swap');
+
+h1 {
+    color: red;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#bio-header {
+    color: brown;
+
+
+}
+
+#skills-header {
+    color: green;
+}
+
+.content {
+    color: grey;
+    font-size: 24px;
+    font-family: "enigmatic";
+    text-align: justify;
+    text-transform: none;
+    line-height: normal;
+    font-weight: 100;
+    margin: 20px 0px 40px 10px;
+    border-top: solid 1px blue;
+    padding: 5px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.img-div {
+    background-color: lightblue;
+}
+
+.light {
+    background-color: aliceblue;
+}
+
+img {
+    width: 13%;
+    box-shadow: 3px 3px 2px black;
+    margin: 1.75%;
+}
+#img-1 {
+    position: fixed;
+}
