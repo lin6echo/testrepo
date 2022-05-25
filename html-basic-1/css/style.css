@@ -1,0 +1,41 @@
+h3 {
+    color: red;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif
+    /*saját font megadása src: url("elérési út a gépen");
+    font-family: "ami nevet adtál neki*/
+}
+img {
+    width: 200px;
+}
+#bioHeader {
+    color: blueviolet;
+}
+#skillsHeader {
+    color: cyan;
+}/*id azonosító alapján megváltoztatva*/
+
+.content {
+    background-color: azure;
+    color: green;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+    /*text-transform: lowercase;*/
+    line-height: normal;
+    font-weight: lighter;
+    border: solid;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 5px 5px gray;
+}/*az összes "content" osztályt változtatja meg*/
+.bold {
+    font-weight: bold;
+}
+.img-div {
+    background-color: burlywood;
+}
+html {
+    background-color: beige;đ
+}
+

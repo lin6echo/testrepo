@@ -1,0 +1,32 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.login-div {
+    padding: 15px;
+    border: solid 1px #c0c0c0;
+    
+    display: inline-block;
+}
+
+.login-div input {
+    display: block;
+    margin-bottom: 7px;
+}
+
+.login-div input {
+    padding: 3px;
+    display: block;
+    margin-bottom: 7px;
+}
+
+.login-div button:hover {
+    box-shadow: 2px 2px 3px grey;
+
+}
+
+.login-div input:focus {
+    box-shadow: 2px 2px 3px rgb(233, 16, 16);
+    border: none;
+
+}
