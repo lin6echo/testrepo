@@ -1,5 +1,5 @@
 //Global Scope.
-var globalName = "Joe";
+/*var globalName = "Joe";
 
 function something() {
     var globalName = "Jack";
@@ -7,4 +7,5 @@ function something() {
 }
 something();
 
-console.log(globalName);
+console.log(globalName);*/
+

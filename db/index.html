@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felhasználók</title>
+    <link rel="stylesheet" href="\lib\bootstrap-4.4.1\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="\node_modules\font-awesome\css\font-awesome.css">
+    <link rel="stylesheet" href="\css\style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <button id="getDataBtn" class="button btn btn-block btn-primary">
+                    Get users
+                </button>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <table id="userTable" class="table table-striped" >
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>actions</th>
+                        </tr>
+                    </thead>
+                        <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="\js\main.2.js"></script>
+</body>
+</html>

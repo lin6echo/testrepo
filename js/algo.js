@@ -97,3 +97,6 @@ for (let i = 0; i < numericArray.length && contains == false; i++) {
     }
 }
 console.log("Thes array contains 5: ", contains);
+
+
+
