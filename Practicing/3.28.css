@@ -1,0 +1,37 @@
+body {
+    background-color: blanchedalmond;
+}
+
+.login-div {
+    padding: 15px;
+    border: solid 1px black;
+    box-shadow: 2 2 2px;
+    border-radius: 5px;
+    display: inline-block
+}
+
+.login-div input {
+    display: block;
+    margin-bottom: 7px;
+}
+
+/*Attribute selector*/
+[type="email"] {
+    background-color: aqua;
+}
+
+/*Pontosabban megadva:*/
+.login-div input[type="password"] {
+    background-color: cadetblue;
+    border: solid 2px blue;
+}
+
+/*Pszeudo szelektorok*/
+button:hover {
+    box-shadow: 2px 2px 5px;
+    background-color: red;
+    cursor: pointer;
+}
+input:focus {
+    padding: 5px;
+}

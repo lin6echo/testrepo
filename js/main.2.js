@@ -25,7 +25,7 @@ document.querySelector("#getDataBtn").addEventListener("click", startGetUsers);
 
 //Fill table with server data.
 function fillDataTable(data, tableID) {
-    let table = document.querySelector('#${tableID}');
+    let table = document.querySelector("#"+tableID);
     if (!table) {
         console.error('Table "${tableID}" is not found.');
         return;
@@ -36,7 +36,7 @@ function fillDataTable(data, tableID) {
     
     let tBody = table.querySelector("tbody");
     tBody.innerHTML = '';
-    let neRow = newUserRow(date[0]);
+    let newRow = newUserRow(data[0]);
     tBody.appendChild(newRow);
 
     for (let row of data) {
@@ -59,7 +59,7 @@ function fillDataTable(data, tableID) {
             tr.appendChild(btnGroup);
             tBody.appendChild(tr);
     }
-
+}
 
 function createAnyElement(name, attributes) {
     let element = document.createElement(name);
@@ -164,4 +164,20 @@ function getRowData(tr){
 function setRow(btn) {
     let tr = btn.parentElement.parentElement.parentElement;
     let data = getRowData(tr);
+    let fetchOptions = {
+        method: "PUT",
+        mode: "cors",
+        cache: "no-cache",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body:JSON.stringify(data)
+    };
+
+    fetch('http://localhost:3000/users/${data.id}', fetchOptions).then(
+        resp => resp.json(),
+        err => console.error(err)
+    ).then(
+        data => startGetUsers()
+    );
 }
