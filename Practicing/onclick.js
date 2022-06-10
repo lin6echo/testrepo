@@ -68,7 +68,7 @@ alertCloseButtons[i].addEventListener("click", function(ev) {
     console.log( ev );
 });
 }
-$('.alert').alert()
+
 /*
 //Select elem kitöltése.
 let toppings = [
