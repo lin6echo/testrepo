@@ -8,3 +8,7 @@ for number in range(1, 101):
     if number % 2 == 0:
         total2 += number
 print(total2)
+
+a = 10
+a += 7.5
+print(a)

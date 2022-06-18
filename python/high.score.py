@@ -1,10 +1,6 @@
-student_scores = input("Input a list of student scores ").split()
-for n in range(0, len(student_scores)):
-  student_scores[n] = int(student_scores[n])
-print(student_scores)
+def divide(n1, n2):
+    result = n1 / n2
+    
+divide(10, 5)
 
-highest_score = 0
-for score in student_scores:
-    if score > highest_score:
-        highest_score = score
-print(f"The highest score in the class is: {highest_score}")
+divide(n2 = 5, n1 = 10)
