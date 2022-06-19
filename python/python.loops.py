@@ -34,7 +34,7 @@ n = 1
 while n < 100:
     if n % 2 == 0:
         continue
-    print(n +1)
+    print(n)
     # Prints all the odd numbers
 
 # INFINITE LOOPS
