@@ -2,8 +2,7 @@ mylist = ["apple", "banana", "cherry"]
 x = len(mylist)
 print(x)
 
-anotherlist = ["Bajzáth Csaba"]
-x = len(anotherlist)
+anotherlist = ("Bajzáth Csaba")
 print(x)
 
 #The len() function returns the number of items in an object.
