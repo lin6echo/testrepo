@@ -19,6 +19,6 @@ print(type(y))
 x, y, z = ("Orange", "Banana", "Pear")
 print(x, y, z)
 
-fruits = ["Orange", "Banana", "Pear"]
+fruits = ["Orange", "Banana", "Pear"] # Unpacking a collection
 x, y, z = fruits
 print(x, y, z)

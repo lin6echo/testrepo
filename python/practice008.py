@@ -1,25 +1,34 @@
-x = "Python"
-y = "is"
-z = "awesome"
-print(x, y, z)
+# srting
 
-x = "Python "
-y = "is "
-z = "awesome"
-print(x + y + z)
+x = "Hello World"
+print(x)
 
-# Global variables
-x = "awesome"
+# booleans
 
-def myfunc():
-    print("Python is " + x)
+print(10 > 9)
+print(10 == 9)
+print(10 < 9)
 
-x = "awesome"
+# list
 
-def myfunc():
-  x = "fantastic"
-  print("Python is " + x)
+mylist = ["apple", "banana", "cherry"]
+print(mylist)
 
-myfunc()
+# tuples
 
-print("Python is " + x)
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)
+
+# sets
+
+myset = {"apple", "banana", "cherry"}
+print(myset)
+
+# dictionaries
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict)
