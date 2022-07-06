@@ -11,4 +11,4 @@ a = "Hello World"
 print(len(a))
 
 b = "Hello World"
-print(b[2:5])
+print(b[2:5])           #slicing

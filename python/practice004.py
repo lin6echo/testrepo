@@ -1,4 +1,4 @@
-def my_function():                  #/The def keyword is used to create, (or define) a function.
+def my_function():                  # The def keyword is used to create, (or define) a function.
   print("Hello from a function")
 
 my_function()

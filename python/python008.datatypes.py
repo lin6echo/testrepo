@@ -11,7 +11,7 @@ my_float = 3.14159
 
 #............................................................................................................................
 
-# STRINS
+# STRINGS
 # A string is just a string of characters. It should be surrounded by double quotes.
 my_string = "Hello"
 

@@ -12,7 +12,7 @@ if n > 2:
     # This is a way to specify some code that will be executed if a condition is false.
 age = 11
 if age > 16:
-    print("Cand drive")
+    print("Can drive")
 else:
     print("Don't drive")
 
