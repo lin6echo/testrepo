@@ -214,14 +214,16 @@ list(enumerate(seasons))
 [(0, 'Spring'), (1, 'Summer'), (2, 'Fall'), (3, 'Winter')]
 list(enumerate(seasons, start=1))
 [(1, 'Spring'), (2, 'Summer'), (3, 'Fall'), (4, 'Winter')]
+
 Equivalent to:
 
-def enumerate(sequence, start=0):
-    n = start
-    for elem in sequence:
-        yield n, elem
-        n += 1
-eval(expression[, globals[, locals]])
+    def enumerate(sequence, start=0):
+        n = start
+        for elem in sequence:
+            yield n, elem
+            n += 1
+    eval(expression[, globals[, locals]])
+
 The arguments are a string and optional globals and locals. If provided, globals must be a dictionary. If provided, locals can be any mapping object.
 
 The expression argument is parsed and evaluated as a Python expression (technically speaking, a condition list) using the globals and locals dictionaries as global and local namespace. If the globals dictionary is present and does not contain a value for the key __builtins__, a reference to the dictionary of the built-in module builtins is inserted under that key before expression is parsed. That way you can control what builtins are available to the executed code by inserting your own __builtins__ dictionary into globals before passing it to eval(). If the locals dictionary is omitted it defaults to the globals dictionary. If both dictionaries are omitted, the expression is executed with the globals and locals in the environment where eval() is called. Note, eval() does not have access to the nested scopes (non-locals) in the enclosing environment.
@@ -653,52 +655,55 @@ fget is a function for getting an attribute value. fset is a function for settin
 
 A typical use is to define a managed attribute x:
 
-class C:
-    def __init__(self):
-        self._x = None
+    class C:
+        def __init__(self):
+            self._x = None
 
-    def getx(self):
-        return self._x
+        def getx(self):
+            return self._x
 
-    def setx(self, value):
-        self._x = value
+        def setx(self, value):
+            self._x = value
 
-    def delx(self):
-        del self._x
+        def delx(self):
+            del self._x
 
-    x = property(getx, setx, delx, "I'm the 'x' property.")
+        x = property(getx, setx, delx, "I'm the 'x' property.")
+
 If c is an instance of C, c.x will invoke the getter, c.x = value will invoke the setter, and del c.x the deleter.
 
 If given, doc will be the docstring of the property attribute. Otherwise, the property will copy fget’s docstring (if it exists). This makes it possible to create read-only properties easily using property() as a decorator:
 
-class Parrot:
-    def __init__(self):
-        self._voltage = 100000
+    class Parrot:
+        def __init__(self):
+            self._voltage = 100000
 
-    @property
-    def voltage(self):
-        """Get the current voltage."""
-        return self._voltage
+        @property
+        def voltage(self):
+            """Get the current voltage."""
+            return self._voltage
+
 The @property decorator turns the voltage() method into a “getter” for a read-only attribute with the same name, and it sets the docstring for voltage to “Get the current voltage.”
 
 A property object has getter, setter, and deleter methods usable as decorators that create a copy of the property with the corresponding accessor function set to the decorated function. This is best explained with an example:
 
-class C:
-    def __init__(self):
-        self._x = None
+    class C:
+        def __init__(self):
+            self._x = None
 
-    @property
-    def x(self):
-        """I'm the 'x' property."""
-        return self._x
+        @property
+        def x(self):
+            """I'm the 'x' property."""
+            return self._x
 
-    @x.setter
-    def x(self, value):
-        self._x = value
+        @x.setter
+        def x(self, value):
+            self._x = value 
 
-    @x.deleter
-    def x(self):
-        del self._x
+        @x.deleter
+        def x(self):
+            del self._x
+
 This code is exactly equivalent to the first example. Be sure to give the additional functions the same name as the original property (x in this case.)
 
 The returned property object also has the attributes fget, fset, and fdel corresponding to the constructor arguments.
