@@ -1058,14 +1058,209 @@ Even strings are iterable objects, they contain a sequence of characters.
     print(a)                                            # return: 57
 ## Naming a module
     You can create an alias when you import a module, by using the as keyword:
-    imprort mymodule1 as mx
+    import mymodule1 as mx
 
     a = mx.person1["age"]
-    print(a)
-##
+    print(a)                                            # return: 57
+## Built in modules
+    import platform
 
+    x = platform.system()
+    print(x)                                            # return: windows
 
+    Using the dir() function
+    import platform
 
+    x = dir(platform)
+    print(x)
+## Import from Module
+    def greeting(name):
+        print("Hello, " + name)
+
+    person1 = {
+        "name" : "Csaba",
+        "age" : 57,
+        "country" : "Hungary"
+    }
+
+    from mymodule import person1
+
+    print(person1["age"])                                   # return: 57
+## Python Dates
+    import datetime
+
+    x = datetime.datetime.now()
+    print(x)                                                # return: 2022-07-15 18:28:17.837623
+## Date output
+    import datetime
+
+    x = datetime.datetime.now()
+
+    print(x.year)                                           # return: 2022
+    print(x.strftime("%A"))                                 # return: Friday
+## Creating Date Objects
+    import datetime
+
+    x = datetime.datetime(2022, 7, 15)
+
+    print(x)                                                # return: 2022-07-15 00:00:00
+## strftime method
+    import datetime
+
+    x = datetime.datetime(2022, 7, 15)
+
+    print(x.strftime("%B"))                                 # return: July
+## Built-in Math function
+    The min() and max() functions can be used to find the lowest or highest math module, that allows you to perform mathematical tasks on numbers.
+
+    x = min(5,10,25)
+    y = max(5,10,25)
+
+    print(x)                                                # return: 5
+    print(y)                                                # return: 25
+## The abs() function
+    Returns the absolute (positive) value of the specified number.
+
+    x = abs(-7.25)
+    print(x)                                                # return: 7.25
+## The pow() function
+    Returns the value of x to the power of y (xy)
+
+    x = pow(4,3)
+    print(x)                                                # return: 64 (4*4*4)
+## The math module
+    import math
+
+    x = math.sqrt(64)
+    print(x)                                                # return: 8.0
+## The math.ceil() method
+    import math
+
+    x = math.ceil(1.4)
+    y = math.floor(1.4)
+
+    print(x)                                                    # return: 2
+    print(y)                                                    # return: 1
+## The math.pi constant, return the value of Pi
+    import math
+
+    x = math.pi
+
+    print(x)                                                    # return: 3.141592653589793
+## JSON
+    JSON is text, written with JavaScript Object Notation.
+
+    # Parse JSON string, you can parse it by using the json.loads() methods
+    import json
+
+    some JSON:
+    y = json.loads(x)
+
+    print(y["age"])                                             # return: 30
+## Convert from Python to JSON
+    If you have a Python object, you can convert it into a JSON string by using the json.dumps() method.
+
+    import json
+
+    import json
+
+        # a Python object (dict):
+    x = {
+    "name": "John",
+    "age": 30,
+    "city": "New York"
+    }
+
+        # convert into JSON:
+    y = json.dumps(x)
+
+        # the result is a JSON string:
+    print(y)                                                    # return: {"name": "John", "age": 30, "city": "New York"}
+## Convert Python objects into JSON strings, and print the value
+    import json
+
+    print(json.dumps({"name": "John", "age": 30}))              # return: {"name": "John", "age": 30}
+    print(json.dumps(["apple", "bananas"]))                     # return: ["apple", "bananas"]
+    print(json.dumps(("apple", "bananas")))                     # return: ["apple", "bananas"]
+    print(json.dumps("hello"))                                  # return: "hello"
+    print(json.dumps(42))                                       # return: 42
+    print(json.dumps(31.76))                                    # return: 31.76
+    print(json.dumps(True))                                     # return: true
+    print(json.dumps(False))                                    # return: false
+    print(json.dumps(None))                                     # return: null
+## Convert a Python object containing all the legal data types.
+    import json
+
+    x = {
+        "name":"John",
+        "age":30,
+        "married":True,
+        "divorced":False,
+        "children":("Ann", "Billy"),
+        "pets":None,
+        "cars":[
+            {"model":"BMW 230", "mpg":27.5},
+            {"model":"Ford Edge", "mpg":24.1}
+        ]
+    }
+
+    print(json.dumps(x))                        
+    
+    # return: {"name": "John", "age": 30, "married": true, "divorced": false, "children": ["Ann", "Billy"], "pets": null, "cars": [{"model": "BMW 230", "mpg": 27.5}, {"model": "Ford Edge", "mpg": 24.1}]}
+## Format the Result
+    The json.dumps() method had parameters to make it easier to read the result:
+    Use the separators parameter to change the default separator:
+
+    json.dumps(x. indent=4, separators=(".", "="))
+
+    import json
+
+    x = {
+    "name": "John",
+    "age": 30,
+    "married": True,
+    "divorced": False,
+    "children": ("Ann","Billy"),
+    "pets": None,
+    "cars": [
+        {"model": "BMW 230", "mpg": 27.5},
+        {"model": "Ford Edge", "mpg": 24.1}
+    ]
+    }
+
+    # use four indents to make it easier to read the result:
+    print(json.dumps(x, indent=4))
+## Order the Result
+    The json.dumps() method has parameters to order the keys in the result.
+    Use the sort_keys parameter to specify if the result should be sorted or not:
+
+    import re
+
+    #Check if the string starts with "The" and ends with "Spain":
+
+    txt = "The rain in Spain"
+    x = re.search("^The.*Spain$", txt)
+
+    if x:
+            print("YES! We have a match!")
+    else:
+            print("No match")                               # return: YES! We have a match!
+## The findall() function
+    import re
+
+    txt = "The rain in Spain"
+    x = re.findall("ai", txt)
+    print(x)                                                # return: ['ai', 'ai']
+
+    The list contains the matches in the order they are found.
+    Return an empty list if no match was found.
+
+    import re
+
+    txt = "The rain in Spain"
+    x = re.findall("Portugal", txt)
+    print(x)                                                # return: []
+## The search() function                             
 
 
 
