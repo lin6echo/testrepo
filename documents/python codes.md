@@ -28,15 +28,16 @@ The def keyword is used to create, (or define) a function.
 
     total = 0
     for number in range(1, 101):
-        if number % 2 == 0:             	# Csak a páros számokat adja össze 1-100-ig
+        if number % 2 == 0:            # Csak a páros számokat adja össze 1-100-ig
             total += number
     print(total)                            # return: 2550
 
 ##            
+<div style="page-break-after: always;"></div>
 
     total1 = 0
     for number in range(1, 101):
-        total1 += number                	# Minden számot összead 1-100-if
+        total1 += number                	# Minden számot összead 1-100
     print(total1)                           # return: 5050
 
 ##
@@ -66,6 +67,8 @@ We use global keyword to read and write a global variable inside a function.
     import random
 
     print(random.randrange(1,5))            # return: random number 1-4
+
+<div style="page-break-after: always;"></div>
 
 ## String methods
 Strip method remove spaces at the beginning and at the end of the string.
@@ -100,7 +103,9 @@ Strip method remove spaces at the beginning and at the end of the string.
 
     thislist = ["banana", "orange", "kiwi", "apple", "pear"]
     thislist.sort()
-    print(thislist)                     # return: ['apple', 'banana', 'kiwi', 'orange', 'pear']
+    print(thislist)           # return: ['apple', 'banana', 'kiwi', 'orange', 'pear']
+
+<div style="page-break-after: always;"></div>
 
 ## List (start:end)
 
@@ -161,7 +166,7 @@ Python abs() function is used to return the absolute value of a number, i.e., it
         "Peti":"Bogi",
 
     }
-    print(dict)                                     # return: {'Csaba': 'Szilvi', 'Márk': 'Zsani', 'Peti': 'Bogi'}
+    print(dict)     # return: {'Csaba': 'Szilvi', 'Márk': 'Zsani', 'Peti': 'Bogi'}
 ##
     myset = {"alma", 12, True}      
     print(myset)                                    # return: {True, 12, 'alma'}
@@ -200,7 +205,7 @@ Python abs() function is used to return the absolute value of a number, i.e., it
     i = 0
     while i < len(thislist):
         print(thislist[i])
-        i = i + 1                           # return: apple banana kiwi pear orange                                  
+        i = i + 1                      # return: apple banana kiwi pear orange                                  
 ##
     fruits = ["apple", "banana", "kiwi", "pear", "orange"]
     newlist = []
@@ -209,14 +214,16 @@ Python abs() function is used to return the absolute value of a number, i.e., it
         if "a" in x:
             newlist.append(x)
 
-    print(newlist)                          # return: ['apple', 'banana', 'pear', 'orange']            
+    print(newlist)                  # return: ['apple', 'banana', 'pear', 'orange']            
+
+<div style="page-break-after: always;"></div>
 
 ## sort()
 The sort() method sorts the list ascending by default.
 
     sortedlist = [10, 12, 356, 99, 77, 1, 23]
     sortedlist.sort()
-    print(sortedlist)                       # return: [1, 10, 12, 23, 77, 99, 356]
+    print(sortedlist)                  # return: [1, 10, 12, 23, 77, 99, 356]
 ##
     number = -20
     absolute_number = abs(number)
@@ -278,6 +285,8 @@ The sort() method sorts the list ascending by default.
     if "free" in txt1:
         print("Yes, 'free' is present." )   # return: Yes, 'free' is present.
 
+<div style="page-break-after: always;"></div>
+
 ## split()
 
     b = "HelloWorld"
@@ -294,20 +303,22 @@ The sort() method sorts the list ascending by default.
 
     list = ["apple", "pear", "kiwi", "cherry"]
     list.insert(2, "orange")
-    print(list)                             # return: ['apple', 'pear', 'orange', 'kiwi', 'cherry']
+    print(list)              # return: ['apple', 'pear', 'orange', 'kiwi', 'cherry']
 
 ## append()
 
     list1 = ["apple", "pear", "kiwi", "cherry"]
     list1.append("melon")
-    print(list1)                            # return: ['apple', 'pear', 'kiwi', 'cherry', 'melon']
+    print(list1)              # return: ['apple', 'pear', 'kiwi', 'cherry', 'melon']
 
 ## extend()
 
     thislist = ["apple", "banana", "cherry"]
     tropical = ["mango", "pineapple", "papaya"]
     thislist.extend(tropical)
-    print(thislist)                         # return: ['apple', 'banana', 'cherry', 'mango', 'pineapple', 'papaya']
+    print(thislist)    # return: ['apple', 'banana', 'cherry', 'mango', 'pineapple', 'papaya']
+
+<div style="page-break-after: always;"></div>
 
 ## extend - tuple
 
@@ -445,6 +456,8 @@ It is also possible to use the set() constructor to make a set.
     thisset1 = set(("apple", "banana", "kiwi"))
     print(thisset1)                         # return: {'apple', 'banana', 'kiwi'}                               
 
+<div style="page-break-after: always;"></div>
+
 ## add()
 To add one item to a set use the add() method.
 
@@ -477,6 +490,8 @@ the pop() method to remove an item, but this method will remove the last item
     print(x)                                    # return: kiwi
     print(thisset8)                             # return: {'apple', 'pear'}             
 
+<div style="page-break-after: always;"></div>
+
 ## You can loop through the set items by using a for loop:
 
     thisset0 = {"apple", "banana", "kiwi"}
@@ -507,6 +522,8 @@ The intersection_update() method will keep only the items that are present in bo
     x.intersection_update(y)
     print(x)                                    # return: {'apple'}             
 
+<div style="page-break-after: always;"></div>
+
 ## intersection method
 The intersection() method will return a new set, that only contains the items that are present in both sets.
 
@@ -530,6 +547,8 @@ The symmetric_difference() method will return a new set, that contains only the 
     y = {"google", "microsoft", "apple"}
     z = x.symmetric_difference(y)
     print(z)                      # return: {'banana', 'cherry', 'google', 'microsoft'}                              
+
+<div style="page-break-after: always;"></div>
 
 ## Dictionaries
 Dictionaries are used to store data values in key:value pairs.
@@ -556,6 +575,8 @@ Dictionaries are used to store data values in key:value pairs.
 ## There is also a method called get() that will give you the same result:
     x = thisdict.get("model")
     print(x)                                    # return: Mustang
+
+<div style="page-break-after: always;"></div>
 
 ## keys()
 The keys() method will return a list of all the keys in the dictionary.
@@ -590,6 +611,9 @@ The items() method will return each item in a dictionary, as tuples in a list.
     b = thisdict.items()
     print(b)                        # return: dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 1964)])
 ##
+
+<div style="page-break-after: always;"></div>
+
     thisdict = {
     "brand": "Ford",
     "model": "Mustang",
@@ -651,6 +675,8 @@ The pop() method removes the item with the specified key name:
                                                                     model Mustang
                                                                     year 1964
 
+<div style="page-break-after: always;"></div>
+
 ## copy()
 Make a copy of a dictionary with the copy() method:
 
@@ -688,6 +714,8 @@ Make a copy of a dictionary with the copy() method:
     elif c == d:
         print("c and d are equal")                      # return: c and d are equal
 
+<div style="page-break-after: always;"></div>
+
 ## Short Hand If
     if e > f: print("e is greater than f")
 
@@ -718,6 +746,8 @@ The or keyword is a logical operator, and is used to combine conditional stateme
     c = 500
     if a > b or a > c:
         print("At least one of the conditions is True.")    # return: At least one of the conditions is True.
+
+<div style="page-break-after: always;"></div>
 
 ## nested if
 You can have if statements inside if statements, this is called nested if statements.
@@ -756,6 +786,8 @@ With the while loop we can execute a set of statements as long as a condition is
             continue
         print(i)                                    # return: 1 2 4 5 6
 
+<div style="page-break-after: always;"></div>
+
 ## Looping through a string
 Even strings are iterable objects, they contain a sequence of characters.
 
@@ -791,6 +823,7 @@ Even strings are iterable objects, they contain a sequence of characters.
                                                             tasty banana
                                                             tasty cherry
 
+<div style="page-break-after: always;"></div>
 
 ## Createing a function
 
@@ -803,7 +836,7 @@ Even strings are iterable objects, they contain a sequence of characters.
         print("The youngest child is " + child3)
 
     my_function(child1="Emil", child2=Tobias, child3="Linus") # return: The youngest child is Linus
-## Default Parameter Valoue
+## Default Parameter Value
     def my_function(country="Hungary"):
         print("I am from " + country)
 
@@ -823,6 +856,9 @@ Even strings are iterable objects, they contain a sequence of characters.
     my_function(fruits)                         # return:   apple
                                                             banana
                                                             cherry
+
+<div style="page-break-after: always;"></div>
+
 ## Return Values
     def my_function(x):
         return 5 * x
@@ -879,6 +915,9 @@ Even strings are iterable objects, they contain a sequence of characters.
     Class definitions cannot be empty, but if you for some reason have a class definition with no content, put in the pass statement to avoid gettin an error.
     class Person:
      pass
+
+<div style="page-break-after: always;"></div>
+
 ## Python Inheritance
     Inhetitance allows us to define a class that inherits all the methods and properties from another class.
     Parent class is the class being inherited from, also called base class.
@@ -907,6 +946,9 @@ Even strings are iterable objects, they contain a sequence of characters.
     class Student(Person):
         def __init__(self, fname, lname)
             super().__init__(fname, lname)
+
+<div style="page-break-after: always;"></div>
+
 ## Add Properties
     class Person:
         def __init__(self, fname, lname):
@@ -942,6 +984,9 @@ Even strings are iterable objects, they contain a sequence of characters.
 
     x = Student("Mike", "Olsen", 2019)
     x.welcome()
+
+<div style="page-break-after: always;"></div>
+
 ## ither() method
     mytuple = ("apple", "banana", "cherry")
     myit = iter(mytuple)
@@ -970,6 +1015,9 @@ Even strings are iterable objects, they contain a sequence of characters.
 
     for x in mystr:
         print(x)
+
+<div style="page-break-after: always;"></div>
+
 ## Create an iterator __iter__() and __next__() method
     class MyNumbers:
             def __iter__(self):
@@ -1007,6 +1055,9 @@ Even strings are iterable objects, they contain a sequence of characters.
 
     for x in myiter:
         print(x)                                        # return: 1 2 3 ..... 19 20
+
+<div style="page-break-after: always;"></div>
+
 ## Local scope
     def myfunc():
         x = 300
@@ -1037,6 +1088,9 @@ Even strings are iterable objects, they contain a sequence of characters.
     mymodule.py
     def greeting(name)
         print("Hello, " + name)
+
+<div style="page-break-after: always;"></div>
+
 ## Use a module
     import mymodule
     mymodule.greeting("Csaba")                          # return: Hello, Csaba
@@ -1062,6 +1116,9 @@ Even strings are iterable objects, they contain a sequence of characters.
 
     a = mx.person1["age"]
     print(a)                                            # return: 57
+
+<div style="page-break-after: always;"></div>
+
 ## Built in modules
     import platform
 
@@ -1091,6 +1148,9 @@ Even strings are iterable objects, they contain a sequence of characters.
 
     x = datetime.datetime.now()
     print(x)                                                # return: 2022-07-15 18:28:17.837623
+
+<div style="page-break-after: always;"></div>
+
 ## Date output
     import datetime
 
@@ -1118,6 +1178,9 @@ Even strings are iterable objects, they contain a sequence of characters.
 
     print(x)                                                # return: 5
     print(y)                                                # return: 25
+
+<div style="page-break-after: always;"></div>
+
 ## The abs() function
     Returns the absolute (positive) value of the specified number.
 
@@ -1149,33 +1212,31 @@ Even strings are iterable objects, they contain a sequence of characters.
     print(x)                                                    # return: 3.141592653589793
 ## JSON
     JSON is text, written with JavaScript Object Notation.
-
     # Parse JSON string, you can parse it by using the json.loads() methods
     import json
 
     some JSON:
     y = json.loads(x)
-
     print(y["age"])                                             # return: 30
 ## Convert from Python to JSON
     If you have a Python object, you can convert it into a JSON string by using the json.dumps() method.
 
     import json
-
-    import json
-
-        # a Python object (dict):
+    # a Python object (dict):
     x = {
     "name": "John",
     "age": 30,
     "city": "New York"
     }
 
-        # convert into JSON:
+    # convert into JSON:
     y = json.dumps(x)
 
-        # the result is a JSON string:
+    # the result is a JSON string:
     print(y)                                                    # return: {"name": "John", "age": 30, "city": "New York"}
+
+<div style="page-break-after: always;"></div>
+
 ## Convert Python objects into JSON strings, and print the value
     import json
 
@@ -1207,6 +1268,9 @@ Even strings are iterable objects, they contain a sequence of characters.
     print(json.dumps(x))                        
     
     # return: {"name": "John", "age": 30, "married": true, "divorced": false, "children": ["Ann", "Billy"], "pets": null, "cars": [{"model": "BMW 230", "mpg": 27.5}, {"model": "Ford Edge", "mpg": 24.1}]}
+
+<div style="page-break-after: always;"></div>
+
 ## Format the Result
     The json.dumps() method had parameters to make it easier to read the result:
     Use the separators parameter to change the default separator:
@@ -1245,6 +1309,9 @@ Even strings are iterable objects, they contain a sequence of characters.
             print("YES! We have a match!")
     else:
             print("No match")                               # return: YES! We have a match!
+
+<div style="page-break-after: always;"></div>
+
 ## The findall() function
     import re
 
@@ -1260,7 +1327,85 @@ Even strings are iterable objects, they contain a sequence of characters.
     txt = "The rain in Spain"
     x = re.findall("Portugal", txt)
     print(x)                                                # return: []
-## The search() function                             
+## The search() function
+    The search() function searches the string for a match, and returns a Match object if there is a match.
+
+    import re
+
+    txt = "The rain in Spain"
+    x = re.search("\", txt)                                 # return: []
+
+    import re
+
+    txt = "The rain in Spain"
+    x = re.search("Portugal", txt)
+    print(x)                                                # return: none
+
+<div style="page-break-after: always;"></div>
+
+## The split() function
+    The split() function returns a list where the string has been split at each match.
+
+    import re
+
+    txt = "The rain in Spain"
+    x = re.split("\s", txt) 
+    print(x)                                                # return: ['The', 'rain', 'in', 'Spain']
+
+    Split the string only at the first occurence:
+
+    txt = "The rain in Spain"
+    x = re.split("\s", txt, 1) 
+    print(x)                                              # return: ['The', 'rain in Spain']
+## The sub() function
+    The sub() function replace the matches with the text o your choice.
+
+    import re
+
+    txt = "The rain in Spain"
+    x = re.split("\s", 9, txt)
+    print(x)                                                # return: The9rain9in9Spain
+
+<div style="page-break-after: always;"></div>
+
+## Match Object
+    import re
+
+    txt = "The rain in Spain"
+    x = re.search("ai", txt)
+    print(x)                                                # return: <re.Match object; span=(5, 7), match='ai'>
+
+    import re
+
+    #Search for an upper case "S" character in the beginning of a word, and print its position:
+
+    txt = "The rain in Spain"
+    x = re.search(r"\bS\w+", txt)
+    print(x.span())                                         # return: (12, 17)
+
+    import re
+
+    #The string property returns the search string:
+
+    txt = "The rain in Spain"
+    x = re.search(r"\bS\w+", txt)
+    print(x.string)                                         # return: The rain in Spain
+
+    import re
+
+    #Search for an upper case "S" character in the beginning of a word, and print the word:
+
+    txt = "The rain in Spain"
+    x = re.search(r"\bS\w+", txt)
+    print(x.group())                                        # return: Spain
+## Using a package
+    import camelcase
+
+    c = camelcase.CamelCase()
+    txt = "hello world"
+    print(c.hump(txt))                                      # return: Hello World
+## 
+
 
 
 
