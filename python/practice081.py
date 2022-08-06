@@ -73,4 +73,64 @@ import re
 
 txt = "The rain in Spain"
 x = re.findall("Portugal", txt)
-print(x)     
+print(x)
+
+import re
+
+txt = "The rain in Spain"
+x = re.search("\s", txt)  
+
+import re
+
+txt = "The rain in Spain"
+x = re.search("Portugal", txt)
+print(x)
+
+import re
+
+txt = "The rain in Spain"
+x = re.split("\s", txt) 
+print(x)
+
+txt = "The rain in Spain"
+x = re.split("\s", txt, 1) 
+print(x) 
+
+import re
+
+txt = "The rain in Spain"
+x = re.sub("\s", "9", txt)
+print(x)
+
+import re
+txt = "The rain in Spain"
+x = re.search("ai", txt)
+print(x)
+
+import re
+
+#Search for an upper case "S" character in the beginning of a word, and print its position:
+
+txt = "The rain in Spain"
+x = re.search(r"\bS\w+", txt)
+print(x.span())
+
+import re
+
+#The string property returns the search string:
+
+txt = "The rain in Spain"
+x = re.search(r"\bS\w+", txt)
+print(x.string)
+
+import re
+
+    
+
+txt = "The rain in Spain"
+x = re.search(r"\bS\w+", txt)
+print(x.group())
+
+
+
+   
