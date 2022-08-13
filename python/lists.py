@@ -76,3 +76,4 @@ b1 = [i*i for i in a1]
 
 print(a1)
 print(b1)
+

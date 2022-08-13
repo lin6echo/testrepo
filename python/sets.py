@@ -147,8 +147,8 @@ print(setB)
 #........................................................
 a = frozenset([1,2,3,4,5]) # immutable
 
-a.add(6)
-a.remove(1)
+a.add(6)        # attribute error
+a.remove(1)     # attribute error
 
 
 
