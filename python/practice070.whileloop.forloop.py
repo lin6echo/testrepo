@@ -1,11 +1,3 @@
-tuple = ("apple", "banana", "kiwi", "orange", "mango", "pear")
-print(tuple)
-print(len(tuple))
-print(type(tuple))
-print(tuple[1])
-print(tuple[1:5])
-
-
 # While loop
 n = 1
 while n < 100:
@@ -27,3 +19,19 @@ y[1] = "kiwi"
 x = tuple(y)
 
 print(x)
+
+total = 0
+for number in range(1,11):
+     if number % 2 == 0:
+         total += number
+print(total)
+
+n = 0
+while n < 10:
+     n += 1
+     print(n)
+
+for num in range(0, 10):
+    if num % 2 == 1:
+        print(num)
+

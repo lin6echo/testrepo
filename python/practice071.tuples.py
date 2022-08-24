@@ -27,3 +27,23 @@ thisset6 = {"apple", "banana", "cherry"}
 myset = ["kiwi", "orange"]
 thisset6.update(myset)
 print(thisset6)
+
+tuple = ("apple", "banana", "kiwi", "orange", "mango", "pear")
+print(tuple)
+print(len(tuple))
+print(type(tuple))
+print(tuple[1])
+print(tuple[1:5])
+
+thistuple = ("apple", "banana", "cherry")
+
+for x in thistuple:
+    print(x)
+
+for i in range(len(thistuple)):
+    print(thistuple[i])
+
+i = 0
+while i < len(thistuple):
+    print(thistuple[i])
+    i = i + 1

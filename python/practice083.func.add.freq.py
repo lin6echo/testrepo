@@ -1,4 +1,4 @@
-def func(word, add = 2, freq = 2):
+def func(word, add = 1, freq = 2):
     print(word*(freq + add))
     
 func('Csaba')
