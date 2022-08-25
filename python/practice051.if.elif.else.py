@@ -19,14 +19,6 @@ elif e == f:
 else:
     print("e greater than f")
 
-# Short Hand If
-if e > f: print("e is greater than f")
-
-# Short Hand If ... Else
-g = 2
-h = 200
-print("A") if g > h else print("B")
-
 # multiple else statements on the same line
 j = 333
 k = 333

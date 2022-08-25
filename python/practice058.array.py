@@ -1,4 +1,4 @@
-cars = ["Ford", "Volvo", "BMW"]
+cars = ["Ford", "Volvo", "BMW"]  # array = tömb, halmaz
 x = cars
 
 # Adding Array Elements
