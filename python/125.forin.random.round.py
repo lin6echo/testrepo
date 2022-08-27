@@ -8,4 +8,3 @@ print(n)
 
 print(round(2.555 + 7.6565))
 
-print(abs(-4.3))

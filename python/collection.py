@@ -14,9 +14,6 @@ c = Counter(cats=4, dogs=7)
 print(c)
 print(c['cats'])
 
-
-# VI. 02:46
-
 print(list(c.elements()))
 
 print(c.most_common(2))
