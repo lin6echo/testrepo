@@ -18,7 +18,7 @@ print(func(2))
 func3 = lambda x,y: x + y
 print(func3(3,4))
 
-# V. 03:59
+
 
 a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
