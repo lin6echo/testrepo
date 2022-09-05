@@ -9,5 +9,5 @@ str(a)
 
 message = "Hello Csaba"
 print(message)
-print(7+7*7-7)
+
 
