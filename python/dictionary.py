@@ -38,7 +38,6 @@ print(week)
 
 d = dict()
 
-for x in range(1,32):
-    for day in week:
-        d[x] = day
-print(d)  
+#for x in range(1,32):
+    
+#print(d)  
