@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "..\\html-basic-2"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "testrepo",
+		"terminal.integrated.commandsToSkipShell": [
+			"javaScript > Validate: Enabled"
+		]
+	}
+}

@@ -27,3 +27,18 @@ print(programming_dictionary)
 for key in programming_dictionary:
     print(key)
     print(programming_dictionary[key])
+
+#----------------------------------------------------------------------------------------------------
+
+week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+m = list(range(1, 32))
+
+print(m)
+print(week)
+
+d = dict()
+
+for x in range(1,32):
+    for day in week:
+        d[x] = day
+print(d)  
